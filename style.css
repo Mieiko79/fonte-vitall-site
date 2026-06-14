@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f7f4ec;
+  color: #2d3a2d;
+}
+
+.topo {
+  background: #315c3b;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo h1 {
+  font-size: 34px;
+}
+
+.logo p {
+  color: #dceacb;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d6b46a;
+}
+
+.hero {
+  min-height: 480px;
+  background:
+    linear-gradient(rgba(49, 92, 59, 0.75), rgba(49, 92, 59, 0.75)),
+    url("https://images.unsplash.com/photo-1512621776951-a57141f2eefd");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+}
+
+.hero-texto {
+  max-width: 650px;
+}
+
+.hero h2 {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.botao {
+  background: #d6b46a;
+  color: #2d3a2d;
+  padding: 14px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 50px 8%;
+}
+
+section h2 {
+  text-align: center;
+  color: #315c3b;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.sobre p {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.destaques {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  background: #eef3e5;
+}
+
+.destaques div {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.destaques h3 {
+  color: #315c3b;
+  margin-bottom: 10px;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card h3 {
+  color: #315c3b;
+  margin: 15px 0 8px;
+}
+
+.card p {
+  font-size: 15px;
+  min-height: 60px;
+}
+
+.card span {
+  display: block;
+  color: #9b742c;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+button {
+  border: none;
+  background: #315c3b;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #24472d;
+}
+
+.pedido {
+  max-width: 750px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+#listaPedido {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#listaPedido li {
+  background: #eef3e5;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#listaPedido button {
+  background: #b23b3b;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: 1px solid #c9d5bf;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.finalizar {
+  width: 100%;
+  margin-top: 15px;
+  background: #315c3b;
+}
+
+.limpar {
+  width: 100%;
+  margin-top: 10px;
+  background: #b23b3b;
+}
+
+.contato {
+  background: #eef3e5;
+  text-align: center;
+}
+
+.contato p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+footer {
+  background: #315c3b;
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+
+@media (max-width: 768px) {
+  .topo {
+    text-align: center;
+    justify-content: center;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .destaques {
+    grid-template-columns: 1fr;
+  }
+}
